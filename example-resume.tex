@@ -1,0 +1,309 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.3 (24/12/2018) 
+%
+% This template has been downloaded from:
+% https://github.com/mlda065/friggeri-letter
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% Modifications by Matthew Davis (matthew@mdavis.xyz)
+%
+% License:
+%    Copyright (C) 2012, Adrien Friggeri
+%    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+%    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+%    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+
+\begin{document}
+
+\header{John~}{Smith}{Professional Cool Guy} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+
+\aside{
+\subsubsection{contact}
+%don't display the name in the contact details on the first page
+%because it's up the top%That's why there's the if statement
+\ifx \firstPage \undefined
+   \xdef\firstPage{}
+\else
+John Smith \\
+~ \\
+\fi
+123 Fake St \\
+Australia \\
+~  \\
+02 1234 5678 \\
+0412 345 678 \\
+~   \\
+\href{mailto:example@example.com}{example@example.com} \\
+\href{http://www.smith.com}{http://www.smith.com}
+~ \\
+~ \\
+\subsubsection{languages}
+English \\
+Spanish \\
+Pig Latin
+}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Full Time}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2012--Now}
+{Company}
+{Sydney}%side thing
+{Position Title}
+{
+job description
+}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+\subsection{Part Time}
+
+\begin{entrylist}
+
+
+\entry
+{2013-2015}
+{Company}
+{side thing}
+{Job title}
+{
+Description
+}
+
+
+%------------------------------------------------
+
+
+\end{entrylist}
+
+
+%------------------------------------------------
+
+
+\subsection{Community Roles}
+
+\begin{entrylist}
+
+
+\entry
+{2012-Now}
+{Organisation name}
+{}
+{Role}
+{
+description
+}
+
+
+%------------------------------------------------
+
+
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2012--2016}
+{Bachelor {\normalfont of Galvanic Engineering}}
+{The University of Earth}
+{Weighted Average Mark of 200.1\%}
+{
+Thesis topic on something really cool. Electives include this, that and the other.
+}
+
+%------------------------------------------------
+
+\entry
+{2006--2011}
+{High School Certificate}
+{School name}
+{Mark}
+{
+}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2015}
+{Awesome Award}
+{United Nations}
+{}
+{Awarded to the most awesome person in the world}
+
+%------------------------------------------------
+
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Technical SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+
+
+\entry
+{}
+{Software}
+{}
+{}
+{
+Matlab, Eagle, Cadence, LTSpice, Microsoft Excel, Unix/Linux
+}
+
+%------------------------------------------------
+
+
+\entry
+{}
+{Programming}
+{}
+{}
+{
+Confident with C, Python, \LaTeX, HTML5
+
+}
+
+%------------------------------------------------
+
+
+
+\end{entrylist}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Human SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Human Skills}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+
+
+\entry
+{}
+{Leadership}
+{}
+{}
+{
+Blah blah blah
+}
+
+%------------------------------------------------
+
+
+\entry
+{}
+{Teamwork}
+{}
+{}
+{
+Blah blah blah
+}
+
+%------------------------------------------------
+
+
+
+\end{entrylist}
+
+\newpage{} % force a new page, because LaTeX isn't doing its job
+
+%----------------------------------------------------------------------------------------
+%	References SECTION
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+
+\begin{entrylist}
+
+
+\entry
+{}
+{Name}
+{Company/Organisation}
+{Title}
+{
+Contact details here
+}
+
+
+\entry
+{}
+{Name}
+{Company/Organisation}
+{Title}
+{
+Contact details here
+}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
